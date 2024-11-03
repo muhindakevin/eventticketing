@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Ticketing Dashboard</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Event Dashboard</h2>
+      <div class="sidebar-columns">
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('dashboard-overview')">Dashboard Overview</h3>
+          <ul id="dashboard-overview" class="submenu">
+            <li><a href="#">Summary View</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('events-management')">Events Management</h3>
+          <ul id="events-management" class="submenu">
+            <li><a href="#">Create New Event</a></li>
+            <li><a href="#">Manage Events</a></li>
+            <li><a href="#">Event Calendar</a></li>
+            <li><a href="#">Event Categories</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('ticketing')">Ticketing</h3>
+          <ul id="ticketing" class="submenu">
+            <li><a href="#">Ticket Types</a></li>
+            <li><a href="#">Pricing and Discounts</a></li>
+            <li><a href="#">Ticket Sales Overview</a></li>
+            <li><a href="#">Refunds and Cancellations</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('attendee-management')">Attendee Management</h3>
+          <ul id="attendee-management" class="submenu">
+            <li><a href="#">Attendee List</a></li>
+            <li><a href="#">Check-In System</a></li>
+            <li><a href="#">Waiting List</a></li>
+            <li><a href="#">Import/Export Attendees</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('reports-analytics')">Reports and Analytics</h3>
+          <ul id="reports-analytics" class="submenu">
+            <li><a href="#">Sales Reports</a></li>
+            <li><a href="#">Event Insights</a></li>
+            <li><a href="#">User Behavior</a></li>
+            <li><a href="#">Export Reports</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('user-management')">User Management</h3>
+          <ul id="user-management" class="submenu">
+            <li><a href="#">User Roles</a></li>
+            <li><a href="#">Manage Users</a></li>
+            <li><a href="#">Customer Support Inbox</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('marketing-tools')">Marketing Tools</h3>
+          <ul id="marketing-tools" class="submenu">
+            <li><a href="#">Email Campaigns</a></li>
+            <li><a href="#">Social Media Sharing</a></li>
+            <li><a href="#">Discounts & Promo Codes</a></li>
+            <li><a href="#">Affiliate Management</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('settings')">Settings</h3>
+          <ul id="settings" class="submenu">
+            <li><a href="#">Payment Settings</a></li>
+            <li><a href="#">Notification Settings</a></li>
+            <li><a href="#">Customizations</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-column">
+          <h3 onclick="toggleSubmenu('help-support')">Help & Support</h3>
+          <ul id="help-support" class="submenu">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">User Guide</a></li>
+            <li><a href="#">Contact Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <h1>Welcome to the Event Ticketing Dashboard</h1>
+      <p>Select a section from the sidebar to view details.</p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
